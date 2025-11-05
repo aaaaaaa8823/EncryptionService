@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Шифровальщик</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cipherModal" class="modal">
+        <div class="modal-content">
+            <h2>Шифруй!</h2>
+            <select id="cipherType">
+                <option value="vigenere">Виженера</option>
+                <option value="caesar">Цезарь</option>
+            </select>
+            
+            <div class="input-group">
+                <input type="text" id="inputText" placeholder="Введите текст для шифрования..." maxlength="100">
+            </div>
+            
+            <div class="input-group">
+                    <input type="text" id="key" placeholder="Введите ключевое слово....">
+            </div>
+
+            <button id ='cipherButton' class="cipher-button">Зашифровать</button>
+            
+            <div class="input-group">
+                <input type="text" id="outputText" readonly placeholder="Здесь появится результат...">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
